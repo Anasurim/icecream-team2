@@ -5,4 +5,16 @@
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: var(--mobile)) {
+    width: var(--mobile);
+  }
+
+  @media screen and (min-width: var(--tablet)) {
+    width: var(--tablet);
+  }
+
+  @media screen and (min-width: var(--desktop)) {
+    width: var(--desktop);
+  }
 }
