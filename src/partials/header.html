@@ -1,6 +1,6 @@
 <header class="header">
   <div class="container header__container">
-    <a href="" class="logo">
+    <a href="./index.html" class="logo">
       <img src="./images/logo-png/logo.png" alt="company logo image" />
     </a>
     <div class="header__flex-container">
@@ -10,10 +10,9 @@
         aria-controls="mobile-menu"
       >
         <svg class="mobile-menu__icon" width="32" height="32">
-          <use href="./images/icons/icons.svg#icon-burger"></use>
+          <use href="./images/icons/icons.svg#icon-burger-white"></use>
         </svg>
       </button>
-
       <nav class="site-nav">
         <ul class="site-nav__list">
           <li class="site-nav__item">
@@ -34,31 +33,34 @@
     </div>
   </div>
 </header>
+
 <!-- Mobile menu -->
 
 <div class="menu-container js-menu-container" id="mobile-menu">
-  <a href="" class="logo-mob">
+  <a href="./index.html" class="logo-mob">
     <img src="./images/logo-png/logo-mobile.png" alt="company logo image" />
   </a>
   <button class="menu-toggle js-close-menu">
     <svg class="" width="19" height="19">
-      <use href="./images/icons/icons.svg#icon-modal-close-white"></use>
+      <use href="./images/icons/icons.svg#icon-cross-white"></use>
     </svg>
   </button>
   <ul class="mobile-menu__list">
     <li class="mobile-menu__item">
-      <a href="" class="mobile-menu__link">Home</a>
+      <a href="#hero" class="mobile-menu__link">Home</a>
     </li>
     <li class="mobile-menu__item">
-      <a href="" class="mobile-menu__link mobile-menu__link--black"
+      <a
+        href="#how-it's-made"
+        class="mobile-menu__link mobile-menu__link--black"
         >How it’s made?</a
       >
     </li>
     <li class="mobile-menu__item">
-      <a href="" class="mobile-menu__link">Our products</a>
+      <a href="#products" class="mobile-menu__link">Our products</a>
     </li>
     <li class="mobile-menu__item">
-      <a href="" class="mobile-menu__link">Contact</a>
+      <a href="#contacts" class="mobile-menu__link">Contact</a>
     </li>
   </ul>
   <button type="button" class="header__btn header__btn-mob">Buy now</button>
