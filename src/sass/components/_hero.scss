@@ -188,7 +188,11 @@
   display: flex;
   position: absolute;
   right: 0;
-  bottom: -7;
+  bottom: 0;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    bottom: -7;
+  }
 }
 .hero_img_ice {
   display: flex;
