@@ -1,3 +1,16 @@
+<<<<<<< Updated upstream
+=======
+.contacts{
+  background-color:  var(--main-bg-color);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  padding: 40px 0 60px;
+
+  @media screen and (max-width: 767px){
+    background: linear-gradient(to bottom transparent 172px, var(--main-bg-color) 172px);
+  }
+}
+>>>>>>> Stashed changes
 
 .contacts__list-group {
   width: 100%;
@@ -9,10 +22,20 @@
     display: flex;
     max-width: 768px;
     margin-bottom: 40px;
+<<<<<<< Updated upstream
 
 }
 }
 
+=======
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 60px;
+    max-width: 1200;
+  }
+}
+>>>>>>> Stashed changes
 
 .contacts__item {
   max-width: 100%;
@@ -20,6 +43,7 @@
   padding: 40px 32px 24px;
   font-size: 12px;
   line-height: 1.86;
+<<<<<<< Updated upstream
   background-color: #fff;
   box-shadow: 0 8px 30px rgb(212, 20, 67, 0.1);
   border-radius: 24px;
@@ -31,11 +55,39 @@
   }
 
   &:not(:last-child){
+=======
+  background-color: var(--main-text-color);
+  box-shadow: 0 8px 30px rgb(212, 20, 67, 0.1);
+  border-radius: 24px;
+
+  @media screen and (min-width: 768px) {
+    width: calc(768px / 3);
+    padding: 40px 24px;
+    margin-bottom: 0;
+    width: 224px;
+  }
+
+  &:not(:last-child) {
+>>>>>>> Stashed changes
     @media screen and (min-width: 768px) {
       margin-right: 16px;
     }
   }
 
+<<<<<<< Updated upstream
+=======
+  @media screen and (min-width: 1200px) {
+    width: calc(1200px / 3);
+    padding: 40px;
+    font-size: 16px;
+    background-color: var(--card-bg);
+  }
+  &:not(:last-child) {
+    @media screen and (min-width: 1200px) {
+      margin-right: 32px;
+    }
+  }
+>>>>>>> Stashed changes
 }
 
 .contacts__item-title {
@@ -48,12 +100,18 @@
   justify-content: center;
   align-items: center;
   font-weight: 500;
+<<<<<<< Updated upstream
 font-size: 12px;
 line-height: calc(14/12);
+=======
+  font-size: 12px;
+  line-height: calc(14 / 12);
+>>>>>>> Stashed changes
   letter-spacing: 0.04em;
   border-radius: 4px;
   text-transform: uppercase;
 
+<<<<<<< Updated upstream
 
   @media screen and (min-width: 768px){
   font-weight: 500;
@@ -173,3 +231,234 @@ margin-bottom: 10px;
     cursor: pointer;
     color: var(--btn-text-color);
 }
+=======
+  @media screen and (min-width: 768px) {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(22 / 16);
+    border-radius: 6px;
+    margin-bottom: 32px;
+  }
+}
+
+.contacts__city {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(22 / 12);
+  text-transform: capitalize;
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 768px) {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+  }
+}
+
+.contacts__location {
+  max-width: 190px;
+  margin: 0;
+
+  @media screen and (min-width: 768px) {
+    max-width: 159px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 261px;
+  }
+}
+
+.contacts__location-link {
+  font-size: 12px;
+  line-height: calc(22 / 12);
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  text-decoration: none;
+
+  color: var(--bg-color-red);
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: calc(26 / 14);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: calc(29 / 16);
+  }
+}
+
+.contacts__schedule-days {
+  font-size: 12px;
+  line-height: calc(22 / 12);
+  text-transform: capitalize;
+
+  color: var(--secondary-text-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: calc(26 / 14);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+  }
+}
+
+.contacts__schedule::after,
+.contacts__address::after {
+  display: block;
+  width: 100%;
+  margin: 24px 0;
+  content: '';
+  border-bottom: 1px solid #e1e1e1;
+
+  @media screen and (min-width: 768px) {
+    margin: 32px 0;
+  }
+}
+
+.contacts__schedule-time {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(22 / 12);
+
+  color: var(--time-text-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: calc(26 / 14);
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+  }
+}
+
+.contacts__schedule li:nth-child(2n) {
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 12px;
+  }
+}
+
+.contacts__link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(19 / 12);
+  text-decoration: none;
+
+  color: var(--secondary-text-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: calc(21 / 14);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: calc(24 / 16);
+  }
+}
+
+.contacts__modal {
+  width: 100%;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.contacts__modal-btn {
+  margin: 0 auto;
+  justify-content: center;
+  margin: 0;
+}
+
+.contacts__modal-btn:first-child {
+  margin-bottom: 10px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    margin-right: 16px;
+  }
+}
+
+.contacts__arrow {
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin-left: 7px;
+  margin-top: 2px;
+}
+
+// contacts buttons
+.contacts__btn.btn-location,
+.contacts__btn.btn-franchise {
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  text-transform: capitalize;
+  justify-content: center;
+  border-radius: 10px;
+  width: 196px;
+  padding: 0, 17px;
+  height: 42px;
+  margin: 0 auto;
+  transition: background-color 250ms ease-in-out;
+}
+
+.btn-location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--accent-color);
+  border: 0;
+  cursor: pointer;
+  color: var(--secondary-text-color);
+
+  &:hover {
+    background-color: var(--btn-hover-color);
+  }
+
+  &:focus {
+    background-color: var(--btn-hover-color);
+    color: var(--card-bg);
+    outline: 0 transparent;
+  }
+  &:disabled {
+    background-color: var(--time-text-color);
+    color: var(--secondary-text-color);
+  }
+}
+
+.btn-franchise {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 2px solid var(--accent-color);
+  cursor: pointer;
+  color: var(--btn-text-color);
+
+  &:hover {
+    border: 2px solid var(--btn-hover-color);
+    background-color: transparent;
+    color: var(--btn-text-color);
+  }
+  &:focus {
+    border: 2px solid var(--btn-hover-color);
+    background-color: transparent;
+    color: var( --card-bg);
+  }
+
+  &:disabled{
+    border: 2px solid var(--time-text-color);
+    background-color: transparent;
+    color: var(--btn-text-color);
+  }
+}
+>>>>>>> Stashed changes
