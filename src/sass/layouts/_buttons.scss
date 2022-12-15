@@ -46,3 +46,36 @@
     color: var(--main-text-colors);
   }
 }
+
+// =========== scroll to top button =========== //
+
+.btn--to-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 10000;
+  border: none;
+  outline: none;
+  background-color: var(--accent-color);
+
+  cursor: pointer;
+
+  border-radius: 50%;
+
+  transition: background-color 250ms ease-in-out;
+
+  &:hover,
+  :focus {
+    background-color: var(--btn-hover-color);
+    box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.icon-arrow {
+  fill: var(--secondary-text-color);
+}
