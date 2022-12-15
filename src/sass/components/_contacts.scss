@@ -1,16 +1,16 @@
-<<<<<<< Updated upstream
-=======
-.contacts{
-  background-color:  var(--main-bg-color);
+.contacts {
+  background-color: var(--main-bg-color);
   background-repeat: no-repeat;
   background-position: 50%;
   padding: 40px 0 60px;
 
-  @media screen and (max-width: 767px){
-    background: linear-gradient(to bottom transparent 172px, var(--main-bg-color) 172px);
+  @media screen and (max-width: 767px) {
+    background: linear-gradient(
+      to bottom transparent 172px,
+      var(--main-bg-color) 172px
+    );
   }
 }
->>>>>>> Stashed changes
 
 .contacts__list-group {
   width: 100%;
@@ -22,12 +22,6 @@
     display: flex;
     max-width: 768px;
     margin-bottom: 40px;
-<<<<<<< Updated upstream
-
-}
-}
-
-=======
   }
 
   @media screen and (min-width: 1200px) {
@@ -35,7 +29,6 @@
     max-width: 1200;
   }
 }
->>>>>>> Stashed changes
 
 .contacts__item {
   max-width: 100%;
@@ -43,23 +36,22 @@
   padding: 40px 32px 24px;
   font-size: 12px;
   line-height: 1.86;
-<<<<<<< Updated upstream
+
   background-color: #fff;
   box-shadow: 0 8px 30px rgb(212, 20, 67, 0.1);
   border-radius: 24px;
 
-  @media screen and (min-width: 768px){
-    flex-basis: calc((100% - 2*16px) /3);
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 2 * 16px) / 3);
     padding: 40px 24px;
     margin-bottom: 0;
   }
 
-  &:not(:last-child){
-=======
-  background-color: var(--main-text-color);
-  box-shadow: 0 8px 30px rgb(212, 20, 67, 0.1);
-  border-radius: 24px;
-
+  &:not(:last-child) {
+    background-color: var(--main-text-color);
+    box-shadow: 0 8px 30px rgb(212, 20, 67, 0.1);
+    border-radius: 24px;
+  }
   @media screen and (min-width: 768px) {
     width: calc(768px / 3);
     padding: 40px 24px;
@@ -68,14 +60,11 @@
   }
 
   &:not(:last-child) {
->>>>>>> Stashed changes
     @media screen and (min-width: 768px) {
       margin-right: 16px;
     }
   }
 
-<<<<<<< Updated upstream
-=======
   @media screen and (min-width: 1200px) {
     width: calc(1200px / 3);
     padding: 40px;
@@ -87,7 +76,6 @@
       margin-right: 32px;
     }
   }
->>>>>>> Stashed changes
 }
 
 .contacts__item-title {
@@ -100,138 +88,135 @@
   justify-content: center;
   align-items: center;
   font-weight: 500;
-<<<<<<< Updated upstream
-font-size: 12px;
-line-height: calc(14/12);
-=======
+
   font-size: 12px;
   line-height: calc(14 / 12);
->>>>>>> Stashed changes
+
+  font-size: 12px;
+  line-height: calc(14 / 12);
+
   letter-spacing: 0.04em;
   border-radius: 4px;
   text-transform: uppercase;
 
-<<<<<<< Updated upstream
-
-  @media screen and (min-width: 768px){
-  font-weight: 500;
-font-size: 16px;
-line-height: calc(22/16);
-border-radius: 6px;
+  @media screen and (min-width: 768px) {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(22 / 16);
+    border-radius: 6px;
   }
 }
 
-.contacts__city{
+.contacts__city {
   color: var(--secondary-text-color);
 
   text-transform: capitalize;
   margin-bottom: 10px;
 }
 
-.contacts__location-link{
+.contacts__location-link {
   font-size: 12px;
-line-height: 183%;
-letter-spacing: 0.04em;
-text-transform: capitalize;
-text-decoration: none;
+  line-height: 183%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  text-decoration: none;
 
-color: var(--bg-color-red);
+  color: var(--bg-color-red);
 }
 
-.contacts__schedule-days{
+.contacts__schedule-days {
   font-size: 12px;
-line-height: 186%;
-text-transform: capitalize;
+  line-height: 186%;
+  text-transform: capitalize;
 
-color: var(--secondary-text-color);
+  color: var(--secondary-text-color);
 }
 
-.contacts__schedule::after, .contacts__address::after{
+.contacts__schedule::after,
+.contacts__address::after {
   display: block;
-    width: 100%;
-    margin: 25px 0;
-    content: "";
-    border-bottom:1px solid #E1E1E1;
+  width: 100%;
+  margin: 25px 0;
+  content: '';
+  border-bottom: 1px solid #e1e1e1;
 }
 
-.contacts__schedule-time{
+.contacts__schedule-time {
   font-weight: 500;
-font-size: 12px;
-line-height: 186%;
+  font-size: 12px;
+  line-height: 186%;
 
-color: var(--time-text-color);
+  color: var(--time-text-color);
 }
 
-.contacts__schedule li:nth-child(2n){
+.contacts__schedule li:nth-child(2n) {
   margin-bottom: 10px;
 }
 
-.contacts__link{
+.contacts__link {
   font-weight: 500;
-font-size: 12px;
-line-height: 160%;
-text-decoration: none;
+  font-size: 12px;
+  line-height: 160%;
+  text-decoration: none;
 
-color: var(--secondary-text-color);
+  color: var(--secondary-text-color);
 }
 
-.contacts__modal{
+.contacts__modal {
   width: 100%;
   justify-content: center;
 }
 
-.contacts__modal-btn{
+.contacts__modal-btn {
   margin: 0 auto;
   justify-content: center;
 }
 
-.contacts__modal-btn:first-child{
-margin-bottom: 10px;
+.contacts__modal-btn:first-child {
+  margin-bottom: 10px;
 }
 
-.contacts__arrow{
+.contacts__arrow {
   display: block;
-    width: 12px;
-    height: 12px;
-    margin-left: 7px;
-    margin-top: 2px;
+  width: 12px;
+  height: 12px;
+  margin-left: 7px;
+  margin-top: 2px;
 }
-
 
 // contacts buttons
-.contacts__btn.btn-location, .contacts__btn.btn-franchise {
-    font-size: 14px;
-    line-height: calc(18/14);
-    text-transform: capitalize;
-    justify-content: center;
-    border-radius: 10px;
-    width: 196px;
-    padding: 0, 17px;
-    height: 42px;
-    margin: 0 auto;
-    
+.contacts__btn.btn-location,
+.contacts__btn.btn-franchise {
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  text-transform: capitalize;
+  justify-content: center;
+  border-radius: 10px;
+  width: 196px;
+  padding: 0, 17px;
+  height: 42px;
+  margin: 0 auto;
 }
 
-.btn-location{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--accent-color);
-    border: 0;
-    cursor: pointer;
-    color: var(--secondary-text-color);
+.btn-location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--accent-color);
+  border: 0;
+  cursor: pointer;
+  color: var(--secondary-text-color);
 }
 
-.btn-franchise{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    border: 2px solid #F8D24E;
-    cursor: pointer;
-    color: var(--btn-text-color);
-}
-=======
+.btn-franchise {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 2px solid #f8d24e;
+  cursor: pointer;
+  color: var(--btn-text-color);
+
   @media screen and (min-width: 768px) {
     font-weight: 500;
     font-size: 16px;
@@ -452,13 +437,12 @@ margin-bottom: 10px;
   &:focus {
     border: 2px solid var(--btn-hover-color);
     background-color: transparent;
-    color: var( --card-bg);
+    color: var(--card-bg);
   }
 
-  &:disabled{
+  &:disabled {
     border: 2px solid var(--time-text-color);
     background-color: transparent;
     color: var(--btn-text-color);
   }
 }
->>>>>>> Stashed changes
