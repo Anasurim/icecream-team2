@@ -1,40 +1,54 @@
+.swiper {
+  width: 600px;
+  height: 300px;
+}
 .costumer_text {
   text-align: center;
   font-weight: 500;
   font-size: 16px;
-  line-height: 186%;
+  line-height: 1.86;
   letter-spacing: 0.04em;
-     padding: 43px 109px;
+  padding: 43px 109px;
   background-color: #84a178;
-    width: 968px;
+  width: 968px;
   border-radius: 24px;
   color: #fcfcfc;
   margin: 0 auto;
   margin-top: 32px;
 
-//   @media screen and (min-width: 479px) {
-//     width: 280px;
-//     padding: 35px 39px;
-//     font-weight: 400;
-//     font-size: 12px;
-//     line-height: 1.17;
-//   }
+  @media screen and (max-width: 1199px) {
+    width: 705px;
+    padding-top: 28px;
+    padding-bottom: 29px;
+    padding-left: 80px;
+    padding-right: 80px;
+    font-size: 14px;
+  }
+  @media screen and (max-width: 767px) {
+    width: 280px;
+    max-height: 253px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2.55;
+    padding: 35px 39px;
+    border-radius: 10px;
+  }
+}
 
-//   @media screen and (min-width: 767px) {
-//     width: 705px;
-//     padding-top: 28px;
-//     padding-bottom: 29px;
-//     padding-left: 80px;
-//     padding-right: 80px;
-//   }
-
-//   @media screen and (min-width: 1199px) {
-//     width: 968px;
-//     padding: 43px 109px;
-//   }
-// }
 .costumer_name {
   text-align: center;
-  margin: 32px;
-  color: black;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  font-size: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.86;
+  color: #131313;
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+}
+.costumer__cafe {
+  text-align: center;
 }
