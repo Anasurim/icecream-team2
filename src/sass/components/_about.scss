@@ -1,0 +1,189 @@
+.about {
+    padding-top: 60px;
+    padding-bottom: 50px;
+    background-color: var(--main-bg-color);
+
+    @media screen and (min-width:768px) and (max-width:1199px){
+        padding-bottom: 60px;
+    }
+}
+
+.about__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(22/18);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 12px;
+    color: var(--main-text-color);
+
+    @media screen and (min-width:1200px){
+        font-weight: 800;
+        font-size: 30px;
+        line-height: calc(37/30);
+    }
+    @media screen and (min-width:768px) and (max-width:1199px){
+        font-weight: 800;
+        font-size: 22px;
+        line-height: calc(27/22);
+        letter-spacing: 0.04em;
+    }
+}
+
+.about__main-title {
+    font-family: 'Seymour One';
+    color: var(--main-text-color);
+    font-weight: 400;
+    font-size: 30px;
+    line-height: calc(38/30);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    
+
+    @media screen and (min-width:1200px){
+        font-size: 36px;
+        line-height: calc(45/36);
+        letter-spacing: 0.06em;
+        margin-bottom: 131px;
+    }
+    @media screen and (min-width:768px) and (max-width:1199px){
+        font-size: 34px;
+        line-height: calc(43/34);
+        letter-spacing: 0.06em;
+        margin-bottom: 80px;
+    }
+    @media screen and (min-width:320px) and (max-width:767px){
+        padding: 0 60px;
+        margin-bottom: 54px;
+    }
+}
+.about__picture-box {
+    position: relative;
+
+    @media screen and (min-width:1200px){
+        display: flex;
+        align-items: center;
+    }
+    @media screen and (min-width:768px) and (max-width:1199px){
+        display: flex;
+    }
+
+}
+
+.about__yellow-circle{
+    content: "";
+    display: block;
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    border-radius: 50%;
+    box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+    position: absolute;
+    z-index: 1;
+
+    @media screen and (min-width:1200px){
+        width: 490px;
+        height: 490px;
+        top: -39px;
+    }
+
+    @media screen and (min-width:768px) and (max-width:1199px){
+        width: 330px;
+        height: 330px;
+        top: -26px;
+    }
+
+    @media screen and (min-width:320px) and (max-width:767px) {
+        width: 279px;
+        height: 279px;
+        top: -22px;
+    }
+
+}
+.about__img {
+    z-index: 10;
+    position: relative;
+
+    @media screen and (min-width:1200px){
+        margin-right: 109px;
+    }
+    @media screen and (min-width:768px) and (max-width:1199px){
+        margin-right: 38px;
+    }
+    @media screen and (min-width:320px) and (max-width:767px){
+        margin-bottom: 40px;
+    }
+}
+.about__text-box{
+    @media screen and (min-width:1200px){
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    @media screen and (min-width:768px) and (max-width:1199px){
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+.about__text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 176%;
+    color: var(--main-text-color);
+
+    @media screen and (min-width:768px){
+        margin-bottom: 8px;
+    }
+    @media screen and (min-width:320px) and (max-width:767px){
+        text-align: center;
+        margin-bottom: 4px;
+        padding: 0px 35px 0px 35px;
+    }
+}
+.first-text{
+    letter-spacing: 0.04em;
+
+    @media screen and (min-width:1200px) {
+        font-size: 16px;
+    }
+}
+
+.text-second {
+    line-height: 162%;
+
+    @media screen and (min-width:1200px){
+        font-size: 14px;
+        line-height: calc(27/14);
+        letter-spacing: 0.04em;
+    }
+    @media screen and (min-width:768px) and (max-width:1199px){
+        letter-spacing: 0.04em;
+    }
+    @media screen and (min-width:320px) and (max-width:767px){
+        margin-bottom: 10px;
+    }
+}
+
+.text-third {
+    letter-spacing: 0.04em;
+
+    @media screen and (min-width:1200px){
+        font-size: 14px;
+        margin-bottom: 54px;
+    }
+    @media screen and (min-width:768px) and (max-width:1199px){
+        line-height: 194%;
+        margin-bottom: 32px;
+    }
+    @media screen and (min-width:320px) and (max-width:767px){
+        display: none;
+    }
+}
+.about__btn{
+    @media screen and (min-width:320px) and (max-width:767px){
+        margin: auto;
+    }
+}
+.about__icons{
+    margin-left: 4px;
+}
