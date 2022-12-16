@@ -14,8 +14,6 @@
     max-width: 247px;
     margin-bottom: 32px;
   }
-  /*  @media screen and (min-width: 1200px) {
-  } */
 }
 .hero__div {
   display: flex;
@@ -131,6 +129,7 @@
   flex-wrap: wrap;
   align-items: baseline;
 }
+
 .hero__link {
   display: flex;
   font-family: 'Montserrat';
@@ -138,6 +137,7 @@
   border-radius: 8px;
   text-decoration: none;
   justify-content: center;
+  color: var(--secondary-text-color);
   @media screen and (max-width: 1199px) {
     width: 108px;
     height: 38px;
@@ -147,7 +147,6 @@
     font-size: 12px;
     line-height: calc(15 / 12);
     margin-right: 12px;
-    color: var(--secondary-text-color);
     &:last-child {
       margin: 0;
     }
@@ -161,6 +160,9 @@
     width: 134px;
     height: 42px;
     margin-right: 12px;
+    &:last-child {
+      margin: 0;
+    }
   }
 }
 .hero__link--made {
@@ -170,16 +172,16 @@
   text-decoration: underline;
   border: none;
   color: var(--accent-color);
+  &:hover {
+    color: var(--btn-hover-color);
+  }
+  &:focus {
+    color: var(--main-text-color);
+  }
   @media screen and (max-width: 1199px) {
     font-weight: 600;
     font-size: 12px;
     line-height: calc(15 / 12);
-    &:hover {
-      color: var(--btn-hover-color);
-    }
-    &:focus {
-      color: var(--main-text-color);
-    }
   }
   @media screen and (min-width: 1200px) {
     font-weight: 600;
@@ -263,6 +265,7 @@
   position: absolute;
   bottom: 0;
   z-index: 1;
+
   @media screen and (max-width: 767px) {
     right: 60px;
   }
@@ -277,6 +280,7 @@
   display: flex;
   position: absolute;
   z-index: 1;
+
   @media screen and (max-width: 767px) {
     display: none;
   }
