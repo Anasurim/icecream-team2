@@ -1,0 +1,191 @@
+.products-section {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.products-text{
+  margin-bottom: 12px;
+font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #131313;
+    @media screen and(min-width: 768px) {
+  font-size: 22px;
+  line-height: 27px;
+      }
+
+      @media screen and(min-width: 1200px) {
+font-size: 30px;
+  line-height: 37px;
+      }
+}
+.products-title{
+  margin-bottom: 140px;
+  font-family: 'Seymour One', sans-serif;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #131313;
+    @media screen and( min-width: 768px ) {
+      margin-bottom: 180px ;
+      font-size: 34px;
+        line-height: 43px;
+    }
+         @media screen and(min-width: 1200px) {
+           margin-bottom: 220px;
+          font-size: 36px;
+            line-height: 45px;
+            letter-spacing: 0.06em;
+         }
+}
+.products-list {
+  text-align: center;
+  display: block;
+  @media screen and (min-width: 768px){
+display: flex;
+justify-content: center;
+gap: 16px;
+  }
+     @media screen and (min-width: 1200px) {
+gap:29px;
+     }
+     }
+
+
+.products-list__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 123px 40px 16px;
+max-width: 280px;
+min-height: 420px;
+margin-left: auto;
+margin-right: auto;
+background-color: #EFD478;
+border-radius: 24px;
+}
+@media screen and (max-width: 767px){
+  .products-list__item:not(:last-child) {
+    margin-bottom: 130px;
+}}
+@media screen and (min-width: 768px) {
+  .products-list__item{
+  padding: 108px 26px 12px;
+    margin: 0;
+flex-basis: 224px;
+min-height: 428px;
+border-radius: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products-list__item {
+  padding: 165px 64px 60px;
+    flex-basis: 370px;
+    max-width: 370px;
+min-height: 536px;
+border-radius: 24px;
+  }
+}
+
+
+
+.products-list__title {
+  margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #131313;
+    @media screen and(min-width: 768px) {
+      font-size: 22px;
+        line-height: 27px;
+      }
+
+      @media screen and(min-width: 1200px) {
+  margin-bottom: 66px;
+      font-size: 30px;
+        line-height: 37px;
+      }
+}
+.products-list__item::before{
+  content: '';
+  position: absolute;
+  top: -100px;
+  left: 40px;
+  display: inline-block;
+  background-size: contain;
+  width: 200px;
+  height: 200px;
+  @media screen and(min-width: 768px) {
+    left: 12px;
+  }
+     @media screen and(min-width: 1200px) {
+  top:-151px;
+       left: 34px;
+      width: 302px;
+        height: 302px;
+     }
+}
+.products-list__item:nth-child(1){
+background-color: #AEC6A5;
+@media screen and (min-width: 768px) {
+box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+}
+@media screen and (min-width: 1200px) {
+box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+}
+  &:nth-child(1)::before {
+    background-image: url(./../images/products/ice-cream-tabl_200.png);
+  @media screen and(min-width: 1200px) {
+    background-image: url(./../images/products/ice-cream-desk_302.png);
+    }
+  }
+}
+.products-list__item:nth-child(2){
+  &::before {
+    background-image: url(./../images/products/ice-coff-tabl_200.png);
+  @media screen and(min-width: 1200px) {
+      background-image: url(./../images/products/ice-coff-desk_302.png);
+    }
+  }
+}
+.products-list__item:nth-child(3){
+background-color: #D6936D;
+  &::before {
+    background-image: url(./../images/products/milkshake-tabl_200.png);
+  @media screen and(min-width: 1200px) {
+      background-image: url(./../images/products/milkshake-desk_302.png);
+    }
+  }
+}
+
+.products-list__text {
+  margin-bottom: auto;
+    font-size: 14px;
+    line-height: 176%;
+    letter-spacing: 0.04em;
+    color: #131313;
+      @media screen and(min-width: 1200px) {
+        font-size: 16px;
+          line-height: calc(28 / 16);
+        }
+}
+
+.products-list__button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.products-list__icon {}
+// @media screen and (min-width: 768px) {
+
+//   }
+//   @media screen and (min-width: 1200px) {
+
+//   }
