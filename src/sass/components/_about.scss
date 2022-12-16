@@ -58,7 +58,7 @@
         margin-bottom: 54px;
     }
 }
-.picture {
+.about__picture-box {
     position: relative;
 
     @media screen and (min-width:1200px){
@@ -71,7 +71,7 @@
 
 }
 
-.yellow-circle{
+.about__yellow-circle{
     content: "";
     display: block;
     background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
@@ -99,7 +99,7 @@
     }
 
 }
-.about-img {
+.about__img {
     z-index: 10;
     position: relative;
 
@@ -113,7 +113,7 @@
         margin-bottom: 40px;
     }
 }
-.text{
+.about__text-box{
     @media screen and (min-width:1200px){
         display: flex;
         flex-direction: column;
