@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 .container {
   @media screen and (max-width: 767px) {
     width: 320px;
@@ -8,6 +9,10 @@
 }
 .hero {
   padding-top: 50px;
+=======
+.hero {
+  padding-top: 45px;
+>>>>>>> Stashed changes
   background-color: var(--main-bg-color);
 
   display: flex;
@@ -18,18 +23,32 @@
   display: flex;
   justify-content: space-between;
 }
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 .hero_title--decor {
   @media screen and (max-width: 1199px) {
     max-width: 247px;
     margin-bottom: 32px;
   }
+<<<<<<< Updated upstream
 }
 .hero_div {
+=======
+
+  /*  @media screen and (min-width: 1200px) {
+  } */
+}
+
+.hero__div {
+>>>>>>> Stashed changes
   display: flex;
 
   flex-direction: column;
   justify-content: center;
 }
+<<<<<<< Updated upstream
 .hero_title {
   font-family: 'Seymour One';
   color: var(--main-text-color);
@@ -62,10 +81,75 @@
     display: flex;
     justify-content: end;
     font-family: 'Montserrat';
+=======
+
+.hero__title {
+  font-family: 'Seymour One';
+  color: var(--main-text-color);
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 26px;
+    line-height: calc(33 / 26);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 38px;
+    line-height: calc(48 / 38);
+  }
+}
+
+.hero__title--decor {
+  font-size: 34px;
+  line-height: calc(33 / 34);
+
+  @media screen and (max-width: 1199px) {
+    max-width: 247px;
+    margin-bottom: 24px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 367px;
+    margin-bottom: 28px;
+    font-size: 38px;
+    line-height: calc(48 / 38);
+  }
+}
+
+.hero__div--span {
+  display: flex;
+
+  justify-content: center;
+  flex-direction: column;
+
+  @media screen and (max-width: 768px) {
+    transform: translateY(40px);
+  }
+  @media screen and (min-width: 1200px) {
+    transform: translateY(50px);
+  }
+}
+
+.hero__span--number {
+  display: flex;
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  justify-content: end;
+  margin-bottom: 4px;
+  color: var(--secondary-text-color);
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+>>>>>>> Stashed changes
     font-weight: 900;
     font-size: 28px;
     line-height: calc(34 / 28);
     letter-spacing: 0.04em;
+<<<<<<< Updated upstream
     text-transform: uppercase;
 
     color: var(--secondary-text-color);
@@ -99,17 +183,99 @@
   @media screen and (max-width: 1199px) {
     display: flex;
 
-    align-items: center;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: calc(15 / 12);
-    margin-bottom: 19px;
+=======
+  }
+  @media screen and (min-width: 1200px) {
+    font-weight: 900;
+    font-size: 46px;
+    line-height: calc(56 / 46);
+  }
+}
 
-    margin-right: 12px;
+.hero__span {
+  display: flex;
+  font-family: 'Montserrat';
+  justify-content: end;
+  color: var(--main-text-color);
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: calc(18 / 8);
+    margin-bottom: 20px;
+
     &:last-child {
       margin: 0;
     }
   }
+  @media screen and (min-width: 1200px) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+.hero__div--center {
+  margin: auto;
+
+  @media screen and (max-width: 767px) {
+    width: 320px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 768px;
+    margin-bottom: 19px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    margin-bottom: 42px;
+  }
+}
+.hero__div--btn {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.hero__link {
+  display: flex;
+  font-family: 'Montserrat';
+  border: 2px solid var(--accent-color);
+  border-radius: 8px;
+  text-decoration: none;
+  justify-content: center;
+
+  @media screen and (max-width: 1199px) {
+    width: 108px;
+    height: 38px;
+    display: flex;
+>>>>>>> Stashed changes
+    align-items: center;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+<<<<<<< Updated upstream
+    margin-bottom: 19px;
+
+    margin-right: 12px;
+=======
+
+    margin-right: 12px;
+    color: var(--secondary-text-color);
+
+>>>>>>> Stashed changes
+    &:last-child {
+      margin: 0;
+    }
+  }
+<<<<<<< Updated upstream
 }
 .hero_link--decor {
   width: 108px;
@@ -134,11 +300,41 @@
 
     &:hover {
       color: #0a8817;
+=======
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    width: 134px;
+    height: 42px;
+    margin-right: 12px;
+  }
+}
+.hero__link--made {
+  display: flex;
+  font-family: 'Montserrat';
+  padding: 11px 0px;
+  text-decoration: underline;
+  border: none;
+
+  color: var(--accent-color);
+
+  @media screen and (max-width: 1199px) {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+
+    &:hover {
+      color: var(--btn-hover-color);
+>>>>>>> Stashed changes
     }
     &:focus {
       color: var(--main-text-color);
     }
   }
+<<<<<<< Updated upstream
 }
 .hero_div--paragraph {
   display: flex;
@@ -150,6 +346,27 @@
   }
 }
 .hero_paragraph {
+=======
+  @media screen and (min-width: 1200px) {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(17 / 15);
+  }
+}
+
+.hero__div--paragraph {
+  display: flex;
+  flex-direction: column;
+  @media screen and (max-width: 1199px) {
+    padding: 20px 0px 24px 201px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 111px 0px 103px 257px;
+  }
+}
+
+.hero__paragraph {
+>>>>>>> Stashed changes
   font-family: 'Montserrat';
   font-weight: 400;
   font-size: 12px;
@@ -161,10 +378,33 @@
   }
   @media screen and (max-width: 1199px) {
     width: 139px;
+<<<<<<< Updated upstream
   }
 }
 
 .hero_div--picture {
+=======
+
+    padding-bottom: 12px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 200px;
+    font-size: 14px;
+    line-height: calc(20 / 14);
+    margin-bottom: 24px;
+  }
+}
+.hero__div__svg {
+  width: 40px;
+  height: 16px;
+  fill: var(--main-text-color);
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.hero__div--picture {
+>>>>>>> Stashed changes
   display: flex;
   position: relative;
   margin: auto;
@@ -175,26 +415,54 @@
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 768px;
+<<<<<<< Updated upstream
     height: 157px;
   }
 }
 .hero_img--left {
+=======
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
+.hero__img--left {
+>>>>>>> Stashed changes
   display: flex;
   position: absolute;
   left: 0;
   bottom: 0;
+<<<<<<< Updated upstream
 }
 .hero_img--rights {
+=======
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    bottom: 5px;
+  }
+  @media screen and (min-width: 1200px) {
+    bottom: 18px;
+  }
+}
+
+.hero__img--rights {
+>>>>>>> Stashed changes
   display: flex;
   position: absolute;
   right: 0;
   bottom: 0;
+<<<<<<< Updated upstream
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     bottom: -7;
   }
 }
 .hero_img_ice {
+=======
+}
+.hero__img_ice {
+>>>>>>> Stashed changes
   display: flex;
   position: absolute;
 
@@ -207,10 +475,22 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     right: 92px;
   }
+<<<<<<< Updated upstream
 }
 .lot_ice_cream {
   display: flex;
   position: absolute;
+=======
+  @media screen and (min-width: 1200px) {
+    right: 107px;
+  }
+}
+
+.lot__ice_cream {
+  display: flex;
+  position: absolute;
+  z-index: 1;
+>>>>>>> Stashed changes
 
   @media screen and (max-width: 767px) {
     display: none;
@@ -219,4 +499,21 @@
     left: 32px;
     bottom: 12px;
   }
+<<<<<<< Updated upstream
+=======
+  @media screen and (min-width: 1200px) {
+    left: 16px;
+    bottom: 65px;
+  }
+}
+.dots_half {
+  display: flex;
+  position: absolute;
+  left: 234px;
+  bottom: 46px;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+>>>>>>> Stashed changes
 }
