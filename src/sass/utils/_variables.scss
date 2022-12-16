@@ -1,4 +1,9 @@
 :root {
+  // breakpoints
+  --mobile: 320px;
+  --tablet: 768px;
+  --desktop: 1200px;
+
   // text colors
   --main-text-color: #fcfcfc;
   --secondary-text-color: #131313;
@@ -7,6 +12,8 @@
   //   bg and accent colors
   --main-bg-color: #84a178;
   --accent-color: #f8d24e;
+  --bg-mobile: #85a279;
+  --card-bg: #ffffff;
 
   //   products cards colors
   --bg-color-red: #d6936d;
@@ -19,4 +26,8 @@
   //contacts and footer additional text color
   --time-text-color: #ababab;
   --copyright-text-color: #7a7a7a;
+  --contact-line: #e1e1e1;
+
+  //btn bgc
+  --btn-hover-color: #0a8817;
 }
