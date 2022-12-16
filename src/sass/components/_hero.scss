@@ -174,17 +174,18 @@
     font-weight: 600;
     font-size: 12px;
     line-height: calc(15 / 12);
-    &:hover {
-      color: var(--btn-hover-color);
-    }
-    &:focus {
-      color: var(--main-text-color);
-    }
   }
   @media screen and (min-width: 1200px) {
     font-weight: 600;
     font-size: 14px;
     line-height: calc(17 / 15);
+  }
+
+  &:hover {
+    color: var(--btn-hover-color);
+  }
+  &:focus {
+    color: var(--main-text-color);
   }
 }
 .hero__div--paragraph {

@@ -188,4 +188,8 @@
 }
 .about__icons {
   margin-left: 4px;
+
+  &:focus {
+    fill: var(--main-text-color);
+  }
 }
