@@ -1,0 +1,138 @@
+// ------- ANIMATION SLIDER
+
+#cf {
+  position: relative;
+  height: 281px;
+  margin: 0 auto;
+}
+
+#cf img {
+  position: absolute;
+  left: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+// #cf img.top:hover {
+//   opacity: 0;
+// }
+
+@keyframes cf3FadeInOut {
+  0% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#cf3 img.top {
+  animation-name: cf3FadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  animation-direction: alternate;
+}
+
+// -------------- SLIDER
+
+.swiper-pagination-bullet-active {
+  background-color: var(--main-bg-color);
+}
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  // background-color: green;
+}
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  &:not(:nth-child(3n)) {
+    margin-right: 18px;
+    margin-top: 32px;
+  }
+}
+
+// slider info
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.costumer {
+  margin-top: 80px;
+  @media screen and (min-width: 768px) {
+    margin-top: 100px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 140px;
+  }
+}
+.costumer__text {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 186%;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  padding: 43px 109px;
+  background-color: var(--main-bg-color);
+  width: 968px;
+  height: 138px;
+  border-radius: 24px;
+  color: var(--main-text-color);
+  margin: 0 auto;
+  margin-top: 32px;
+
+  @media screen and (max-width: 1199px) {
+    width: 705px;
+    height: 138px;
+    padding-top: 28px;
+    padding-bottom: 29px;
+    padding-left: 80px;
+    padding-right: 80px;
+    font-size: 14px;
+  }
+  @media screen and (max-width: 767px) {
+    width: 280px;
+    height: 253px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2.55;
+    padding: 35px 39px;
+    border-radius: 10px;
+  }
+}
+.costumer__name {
+  // width: 189px;
+  // height: 37px;
+  text-align: center;
+  margin: 32px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.86;
+  color: var(--secondary-text-color);
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+    // margin-bottom: 12px;
+  }
+}
+.costumer__photo {
+  margin: 0 auto;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+}
