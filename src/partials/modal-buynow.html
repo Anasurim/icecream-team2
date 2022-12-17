@@ -21,6 +21,47 @@
         </clipPath>
       </defs>
     </svg>
-    <p class="modal__title">Заголовок окна 1</p>
+    <p class="modal-buy__title">Buy now</p>
+    <ul class="modal-buy__list">
+      <li class="modal-buy__item modal-buy__item--green">
+        <div class="modal-buy__circle modal-buy__circle--green"></div>
+        <p class="modal-buy__text">ice cream</p>
+      </li>
+      <li class="modal-buy__item modal-buy__item--yellow">
+        <div class="modal-buy__circle modal-buy__circle--yellow"></div>
+        <p class="modal-buy__text">ice coffee</p>
+      </li>
+      <li class="modal-buy__item modal-buy__item--brown">
+        <div class="modal-buy__circle modal-buy__circle--brown"></div>
+        <p class="modal-buy__text">milkshake</p>
+      </li>
+    </ul>
+    <form name="buy-now-form" class="buy-now-form">
+      <label class="buy-now-form__field">
+        <input
+          type="text"
+          name="username"
+          class="buy-now-form__input"
+          placeholder="Name"
+        />
+      </label>
+      <label class="buy-now-form__field">
+        <input
+          type="tel"
+          name="phone-number"
+          class="buy-now-form__input"
+          placeholder="Phone"
+        />
+      </label>
+      <label class="buy-now-form__textarea">
+        <textarea
+          class="buy-now-form__comment-input"
+          name="comment"
+          placeholder="Comment"
+          rows="4"
+        ></textarea>
+      </label>
+      <button type="submit" class="submit-btn btn">Submit</button>
+    </form>
   </div>
 </div>
