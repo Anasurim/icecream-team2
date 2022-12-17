@@ -1,0 +1,117 @@
+.advantages__section {
+  background-color: var(--main-bg-color);
+}
+.recipe {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 28px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .recipe {
+    // padding-bottom: 204px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .recipe {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .recipe__item {
+    width: 152px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .recipe__item {
+    width: 250px;
+    text-align: center;
+  }
+}
+.recipe__item::before {
+  display: block;
+  margin: 0 auto;
+  content: '';
+  width: 50px;
+  height: 50px;
+  margin-bottom: 16px;
+  background: var(--accent-color);
+  border-radius: 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+@media screen and (min-width: 768px) {
+  .recipe__item::before {
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .recipe__item::before {
+    margin-bottom: 40px;
+  }
+}
+.recipe__item--cow::before {
+  background-image: url('../images/advantages/cow.svg');
+}
+.recipe__item--weight::before {
+  background-image: url('../images/advantages/weight.svg');
+}
+.recipe__item--ice-cone::before {
+  background-image: url('../images/advantages/ice-crema.svg');
+}
+.recipe__number {
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+@media screen and (min-width: 768px) {
+  .recipe__number {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .recipe__number {
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 1.2;
+  }
+}
+
+.recipe__txt {
+  max-width: 230px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+  text-align: center;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .recipe__txt {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.74;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .recipe__txt {
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.02em;
+  }
+}
