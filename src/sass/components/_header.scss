@@ -60,28 +60,13 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
-
-  /* &::after {
-    content: '';
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    background-size: contain;
-    margin-left: 4px;
-    background-image: url(../images/icons/ep_arrow-right-bold.svg);
-  }
-*/
   &:disabled {
     background-color: var(--time-text-color);
   }
+  &:focus .button__icon {
+    fill: var(--main-text-color);
+  }
 }
-/*.header__btn:hover::after {
-  fill: #ffff;
-} */
-.header__btn:hover .button__icon path {
-  fill: red;
-}
-
 .site-nav__list {
   display: none;
   @media screen and (min-width: 1200px) {
@@ -91,6 +76,10 @@
     gap: 28px;
   }
 }
+.button__icon {
+  margin-left: 8px;
+}
+
 .site-nav__link {
   padding: 40px 0;
 
@@ -113,17 +102,18 @@
   left: 0;
   width: 100vw;
   height: 100vh;
+  padding-top: 12px;
+  padding-bottom: 64px;
 
-  background-color: #85a279;
+  background-color: var(--bg-mobile);
   z-index: 110000;
 
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 
-  padding-top: 12px;
   @media screen and (min-width: 768px) {
     padding-top: 20px;
-    background-color: #97af8d;
+    background-color: var(--bg-tablet);
   }
 }
 
@@ -146,12 +136,22 @@
 }
 
 .mobile-menu__list {
-  @media screen and (max-width: 767px) {
-    margin-bottom: 110px;
-    margin-top: 48px;
-  }
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
   @media screen and (min-width: 768px) {
-    margin-top: 73px;
+    display: block;
+  }
+}
+
+.mobile-menu__item {
+  flex-basis: calc((100% - 96px) / 4);
+
+  &:not(:last-child) {
+    @media screen and(min-width: 768px) {
+      margin-bottom: 40px;
+    }
   }
 }
 
@@ -170,12 +170,7 @@
     line-height: calc(59 / 48);
   }
 }
-.mobile-menu__item:not(:last-child) {
-  margin-bottom: 32px;
-  @media screen and(min-width: 768px) {
-    margin-bottom: 40px;
-  }
-}
+
 .header__btn-mob {
   margin: auto auto;
 }
@@ -190,4 +185,16 @@
 }
 .mobile-menu__link--black {
   color: var(--secondary-text-color);
+}
+.flex-height {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 47px;
+  padding-bottom: 64px;
+  @media screen and (min-width: 768px) {
+    display: block;
+    padding-top: 73px;
+  }
 }
