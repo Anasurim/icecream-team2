@@ -77,8 +77,8 @@ document.addEventListener('DOMContentLoaded', function () {
     false
   );
 
-  overlay.addEventListener('click', function () {
-    document.querySelector('.modal.active').classList.remove('active');
-    this.classList.remove('active');
-  });
+  // overlay.addEventListener('click', function () {
+  //   document.querySelector('.modal.active').classList.remove('active');
+  //   this.classList.remove('active');
+  // });
 }); // end ready
