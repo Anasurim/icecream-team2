@@ -6,6 +6,14 @@
   z-index: 999;
 
   background-color: var(--main-bg-color);
+
+  transition: background-color 300ms ease-in-out,
+    backdrop-filter 300ms ease-in-out;
+
+  &.no-transparency {
+    background-color: rgba(132, 161, 120, 0.4);
+    backdrop-filter: blur(4px);
+  }
 }
 
 .header__container {
@@ -80,6 +88,10 @@
   margin-left: 8px;
 }
 
+.mobile-menu__icon {
+  fill: #ffffff;
+}
+
 .site-nav__link {
   padding: 40px 0;
 
@@ -136,12 +148,13 @@
 }
 
 .mobile-menu__list {
-  height: 100%;
+  gap: 32px;
   display: flex;
   flex-direction: column;
 
   @media screen and (min-width: 768px) {
     display: block;
+    gap: 40px;
   }
 }
 
@@ -160,7 +173,7 @@
   text-decoration: none;
   font-weight: 700;
   font-size: 32px;
-  line-height: calc (39 / 32);
+  line-height: calc(39 / 32);
   text-align: center;
 
   color: var(--main-text-color);
