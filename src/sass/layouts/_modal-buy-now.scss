@@ -10,7 +10,8 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 112000;
-  transition: 0.3s all;
+  transition: 300ms ease-in-out;
+  pointer-events: all;
 }
 .modal__cross {
   width: 24px;
