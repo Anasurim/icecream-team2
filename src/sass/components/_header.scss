@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 999;
+  z-index: 10;
 
   background-color: var(--main-bg-color);
 
@@ -118,7 +118,7 @@
   padding-bottom: 64px;
 
   background-color: var(--bg-mobile);
-  z-index: 110000;
+  z-index: 100;
 
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
