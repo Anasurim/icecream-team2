@@ -1,0 +1,270 @@
+.footer {
+    background-color: var(--main-bg-color);
+
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 13px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 11px;
+    }
+}
+
+.footer__container {
+
+
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+        align-items: baselin;
+
+
+    }
+}
+
+
+
+.footer__title {
+    letter-spacing: inherit;
+    text-transform: uppercase;
+    color: var(--main-text-color);
+    margin-bottom: 16px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.2;
+
+    @media screen and (min-width: 768px) {
+        letter-spacing: 0.04em;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 9px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 30px;
+        margin-bottom: 14px;
+        font-weight: 400;
+    }
+
+
+    margin-bottom: 16px;
+}
+
+.footer__subtitle {
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    color: var(--main-text-color);
+    margin-bottom: 42px;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.2;
+
+    @media screen and (min-width: 768px) {
+
+        margin-bottom: 0;
+        letter-spacing: 0.06em;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 58px;
+
+    }
+}
+
+.footer__slogan {
+
+    @media screen and (min-width: 768px) {
+        width: 352px;
+        margin-bottom: 32px;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 240px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 510px;
+    }
+}
+
+.footer__contacts {
+
+    @media screen and (min-width: 768px) {
+        width: 285px;
+
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 338px;
+        margin-bottom: 40px;
+    }
+}
+
+.footer__networks {
+
+    display: flex;
+    justify-content: flex-end;
+
+    font-size: 0;
+
+    margin-bottom: 38px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 40px;
+    }
+}
+
+.footer__networks {
+    gap: 28px;
+}
+
+
+.footer__ico-focus {
+    display: none;
+}
+
+
+
+
+.footer__link {
+
+    &:focus .footer__svg,
+    &:hover .footer__svg {
+        fill: #FCFCFC;
+    }
+
+    @media screen and (min-width: 768px) {
+        &:hover .footer__svg {
+            scale: 0.94;
+        }
+
+        &:focus .footer__svg {
+            scale: 1.126;
+        }
+    }
+}
+
+.footer__svg {
+    height: 32px;
+    width: 32px;
+
+    @media screen and (min-width: 768px) {
+        height: 34px;
+        width: 34px;
+    }
+
+    fill: #84A178;
+
+    transition-property: fill;
+
+    transition-duration: .3s;
+    transition-timing-function: linear;
+}
+
+
+
+.footer__text {
+    text-align: right;
+
+    color: var(--secondary-text-color);
+
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.86;
+
+    @media screen and (min-width: 768px) {
+
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.86;
+        margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.86;
+        letter-spacing: 0.02em;
+    }
+
+}
+
+.footer__tel {
+    color: var(--main-text-color);
+
+    transition-property: color;
+    transition-property: fill;
+
+    transition-duration: .3s;
+    transition-timing-function: linear;
+
+    &:focus,
+    &:hover {
+        color: var(--btn-text-color);
+    }
+}
+
+.footer__thumb {
+    border-top: 1px solid var(--contact-line);
+    text-align: center;
+    ;
+
+
+    @media screen and (max-width: 768px) {
+        padding: 20px 20px 60px 20px;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-top: 14px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1176px;
+        padding-top: 12px;
+        margin: 0 auto;
+    }
+}
+
+.footer__copy {
+
+    letter-spacing: inherit;
+    color: var(--copyright-text-color);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.52;
+    display: inline-block;
+
+    @media screen and (min-width: 768px) {
+
+        letter-spacing: .02em;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 1.86;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 12px;
+    }
+
+}
