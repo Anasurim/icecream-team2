@@ -417,6 +417,7 @@
 .hero__div--paragraph {
   display: flex;
   flex-direction: column;
+  z-index: 1;
 
   animation-name: hero__paragraph;
   animation-duration: 4900ms;
@@ -600,6 +601,10 @@
   width: 40px;
   height: 16px;
   fill: var(--main-text-color);
+  &:hover,
+  &:focus {
+    fill: var(--btn-text-color);
+  }
   @media screen and (max-width: 767px) {
     display: none;
   }
