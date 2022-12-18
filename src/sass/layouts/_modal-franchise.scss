@@ -12,7 +12,7 @@
     transition: 0.3s all;
   }
   
-  .modal {
+  .modal{
     opacity: 0;
     visibility: hidden;
   
@@ -41,6 +41,39 @@
     @media screen and (max-width: 767px) {
       width: 280px;
       height: 100%;
+    }
+  }
+
+  .franchise__title {
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: calc(28 / 20);
+  
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+    text-transform: capitalize;
+  
+    color: #131313;
+  
+    @media screen and (max-width: 767px) {
+      font-size: 12px;
+      line-height: calc(15 / 12);
+    }
+  }
+
+  .franchise__text {
+    font-size: 16px;
+    line-height: calc(22 / 16);
+    margin-top: 24px;
+    text-align: justify;
+  
+    @media screen and (max-width: 767px) {
+      font-size: 14px;
+      line-height: calc(20 / 14);
+      margin-top: 20px;
     }
   }
   
