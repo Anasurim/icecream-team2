@@ -1,33 +1,104 @@
 <section class="gallery">
-  <div class="container gallery-back">
-    <picture class="gallery__img">
-      <source
-        srcset="
-          ./images/gallary/ice-mobi_280.jpg 1x,
-          ./images/gallary/ice-mobi_560.jpg 2x
-        "
-        media="(max-width:767px)"
-      />
-      <source
-        srcset="
-          ./images/gallary/ice-desk_1013.jpg 1x,
-          ./images/gallary/ice-desk_2026.jpg 2x
-        "
-        media="(min-width:1199px)"
-      />
-      <source
-        srcset="
-          ./images/gallary/ice-tabl_704.jpg  1x,
-          ./images/gallary/ice-tabl_1408.jpg 2x
-        "
-        media="(min-width:768px)"
-      />
+  <div class="container">
+    <h2 class="visually-hidden">Gallery</h2>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <picture class="gallery__img">
+            <source
+              srcset="
+                ./images/gallary/ice-desk_1013.jpg 280w,
+                ./images/gallary/ice-desk_2026.jpg 560w
+              "
+              media="(max-width:767px)"
+            />
+            <source
+              srcset="
+                ./images/gallary/ice-desk_1013.jpg 1013w,
+                ./images/gallary/ice-desk_2026.jpg 2026w
+              "
+              media="(min-width:1199px)"
+            />
+            <source
+              srcset="
+                ./images/gallary/ice-desk_1013.jpg  704w,
+                ./images/gallary/ice-desk_2026.jpg 1408w
+              "
+              media="(min-width:768px)"
+            />
 
-      <img
-        class="gallery__pic"
-        src="./images/gallary/ice-desk_1013.jpg"
-        alt="acecream"
-      />
-    </picture>
+            <img
+              class="gallery__pic"
+              src="./images/gallary/ice-desk_1013.jpg"
+              alt="acecream"
+            />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture class="gallery__img">
+            <source
+              srcset="
+                ./images/sliders/ice-cherry_1013.jpg 280w,
+                ./images/sliders/ice-cherry_2026.jpg 560w
+              "
+              media="(max-width:767px)"
+            />
+            <source
+              srcset="
+                ./images/sliders/ice-cherry_1013.jpg 1013w,
+                ./images/sliders/ice-cherry_2026.jpg 2026w
+              "
+              media="(min-width:1199px)"
+            />
+            <source
+              srcset="
+                ./images/sliders/ice-cherry_1013.jpg  704w,
+                ./images/sliders/ice-cherry_2026.jpg 1408w
+              "
+              media="(min-width:768px)"
+            />
+
+            <img
+              class="gallery__pic"
+              src="./images/sliders/ice-cherry_1013.jpg"
+              alt="acecream"
+            />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture class="gallery__img">
+            <source
+              srcset="
+                ./images/sliders/ice-cream_1013.jpg 280w,
+                ./images/sliders/ice-cream_2026.jpg 560w
+              "
+              media="(max-width:767px)"
+            />
+            <source
+              srcset="
+                ./images/sliders/ice-cream_1013.jpg 1013w,
+                ./images/sliders/ice-cream_2026.jpg 2026w
+              "
+              media="(min-width:1199px)"
+            />
+            <source
+              srcset="
+                ./images/sliders/ice-cream_1013.jpg  704w,
+                ./images/sliders/ice-cream_2026.jpg 1408w
+              "
+              media="(min-width:768px)"
+            />
+
+            <img
+              class="gallery__pic"
+              src="./images/sliders/ice-cream_1013.jpg"
+              alt="acecream"
+            />
+          </picture>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
