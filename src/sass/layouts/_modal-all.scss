@@ -467,7 +467,66 @@
   }
 }
 
-// ------
+// ------read more modal-------
+.modal-read {
+  opacity: 0;
+  visibility: hidden;
+
+  width: 100%;
+  max-width: 568px;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+
+  text-align: center;
+  padding: 28px;
+  border-radius: 10px;
+  background-color: var(--main-text-color);
+  transition: 0.3s all;
+  border: 2px solid var(--accent-color);
+
+  @media screen and (min-width: 1200px) {
+    padding: 32px 60px;
+  }
+}
+
+.modal__title {
+  font-family: 'Seymour One';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  color: var(--secondary-text-color);
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+    line-height: calc(28 / 20);
+    margin-bottom: 32px;
+  }
+}
+.video__modal {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  width: inherit;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 32px;
+    width: inherit;
+  }
+}
+.modal__text {
+  font-weight: 400;
+  line-height: calc(20 / 14);
+  color: var(--secondary-text-color);
+  text-align: left;
+
+  @media screen and (min-width: 1200px) {
+    line-height: calc(22 / 16);
+  }
+}
 
 /*CONTACTS MODALS*/
 /* modal location*/
