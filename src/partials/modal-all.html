@@ -119,37 +119,29 @@
     </form>
   </div>
 
-
   <!-- Modal read more -->
   <div class="modal modal-read" data-modal="read-more">
-  <svg class="modal__cross js-modal-close" width="20" height="20">
-    <use href="./images/icons/icons.svg#icon-modal-close"></use>
-  </svg>
-  <p class="modal__title">How it’s made?</p>
-  <video
-    class="video__modal"
-    poster="https://images.pexels.com/photos/595804/pexels-photo-595804.jpeg?w=640"
-    controls
-  >
-    <source
-      src="http://techslides.com/demos/sample-videos/small.webm"
-      type="video/webm"
-    />
-    <source
-      src="http://techslides.com/demos/sample-videos/small.mp4"
-      type="video/mp4"
-    />
-    <source
-      src="http://techslides.com/demos/sample-videos/small.ogg"
-      type="video/ogg"
-    />
-  </video>
-  <p class="modal__text">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur
-    adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-  </p>
-</div>
+    <svg class="modal__cross js-modal-close" width="20" height="20">
+      <use href="./images/icons/icons.svg#icon-modal-close"></use>
+    </svg>
+    <p class="about-modal__title">How it’s made?</p>
+    <iframe
+      class="about__video"
+      width="360"
+      height="315"
+      src="https://www.youtube.com/embed/jHuGLNlET3o"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+
+    <p class="modal__text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+    </p>
+  </div>
 
   <!--MODALS CONTACTS-->
   <!--location-->
@@ -188,26 +180,47 @@
     <ul class="franchise__form">
       <li class="franchise__form-item">
         <label class="franchise__form-lable" for="name">
-          <input class="franchise__form-input" type="text" name="name" id="name" placeholder="Darth Vader"></input>
-
+          <input
+            class="franchise__form-input"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Darth Vader"
+          />
         </label>
       </li>
       <li class="franchise__form-item">
         <label class="franchise__form-lable" for="tel">
-          <input class="franchise__form-input" type="tel" name="tel" id="tel" placeholder="+34123456789"></input>
-
+          <input
+            class="franchise__form-input"
+            type="tel"
+            name="tel"
+            id="tel"
+            placeholder="+34123456789"
+          />
         </label>
       </li>
       <li class="franchise__form-item">
         <label class="franchise__form-lable" for="mail">
-          <input class="franchise__form-input" type="email" name="mail" id="mail" placeholder="vader@death.star"/>
-
+          <input
+            class="franchise__form-input"
+            type="email"
+            name="mail"
+            id="mail"
+            placeholder="vader@death.star"
+          />
         </label>
       </li>
       <li class="franchise__form-item">
         <label class="franchise__form-lable" for="comment">
-          <textarea class="franchise__form-texterea" name="comment" id="comment" cols="3" rows="4" placeholder="comment"></textarea>
-
+          <textarea
+            class="franchise__form-texterea"
+            name="comment"
+            id="comment"
+            cols="3"
+            rows="4"
+            placeholder="comment"
+          ></textarea>
         </label>
       </li>
     </ul>

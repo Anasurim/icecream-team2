@@ -37,7 +37,10 @@
   background-color: transparent;
   border: 2px solid var(--accent-color);
 
+  transition: border-color 250ms ease-in-out;
+
   &:hover {
+    border-color: var(--btn-hover-color);
     border: 2px solid var(--btn-hover-color);
     background-color: transparent;
   }

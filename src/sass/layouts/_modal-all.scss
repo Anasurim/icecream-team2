@@ -27,6 +27,7 @@
   visibility: hidden;
   width: 100%;
   overflow-y: auto;
+  max-height: calc(100vh - 50px);
 
   @media screen and (min-width: 320px) {
     width: 280px;
@@ -47,15 +48,18 @@
   left: 50%;
   transform: translate(-50%, -45%);
   overflow-y: auto;
+  max-height: calc(100vh - 50px);
 
   @media screen and (max-width: 767px) {
     position: absolute;
-    top: 70%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    max-height: calc(100vh - 50px);
+    transform: translate(-50%, -45%);
   }
   @media screen and (min-width: 768px) {
     min-height: 644px;
+    max-height: calc(100vh - 50px);
   }
   /*  Побочные стили   */
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
@@ -271,7 +275,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -35%);
+  transform: translate(-50%, -50%);
   /*  Побочные стили   */
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
   text-align: center;
@@ -281,9 +285,10 @@
   border: 2px solid var(--accent-color);
   transition: 0.3s all;
   overflow-y: auto;
+  max-height: calc(100vh - 50px);
   @media screen and(min-width: 768px) {
     max-width: 568px;
-    min-height: 996px;
+    max-height: calc(100vh - 50px);
   }
 }
 /* Стили для кнопки закрытия */
@@ -476,7 +481,7 @@
 .modal-read {
   opacity: 0;
   visibility: hidden;
-
+  overflow-y: auto;
   width: 100%;
   max-width: 568px;
 
@@ -484,7 +489,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 30;
+  z-index: 300;
 
   text-align: center;
   padding: 28px;
@@ -498,7 +503,7 @@
   }
 }
 
-.modal__title {
+.about-modal__title {
   font-family: 'Seymour One';
   font-weight: 400;
   font-size: 16px;
@@ -512,14 +517,20 @@
     margin-bottom: 32px;
   }
 }
-.video__modal {
+
+.about__video {
   margin-bottom: 20px;
   border-radius: 10px;
-  width: inherit;
+  max-width: 250px;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    max-width: 360px;
+    width: 100%;
+  }
 
   @media screen and (min-width: 1200px) {
     margin-bottom: 32px;
-    width: inherit;
   }
 }
 .modal__text {
@@ -540,11 +551,14 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  overflow-y: auto;
+  max-height: calc(100vh - 50px);
 
   @media screen and (max-width: 480px) {
     position: absolute;
-    top: 500%;
+    top: 50%;
     left: 50%;
+    max-height: calc(100vh - 50px);
     transform: translate(-50%, -50%);
   }
 
@@ -556,8 +570,6 @@
   transition: 0.3s all;
   border-radius: 10px;
   border: 2px solid var(--accent-color);
-}
-.location {
   width: 568px;
   height: 458px;
   @media screen and (max-width: 767px) {
@@ -648,6 +660,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  overflow-y: auto;
 
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
   text-align: center;
@@ -657,16 +670,17 @@
   transition: 0.3s all;
   border-radius: 10px;
   border: 2px solid var(--accent-color);
-}
-.modal-franchise {
+
   width: 568px;
   height: 668px;
   padding: 32px 60px;
+  max-height: calc(100vh - 100px);
 
   @media screen and (max-width: 767px) {
     width: 280px;
     height: 674px;
     padding: 28px 30px;
+    max-height: calc(100vh - 100px);
   }
 }
 
