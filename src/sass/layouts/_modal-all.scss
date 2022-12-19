@@ -19,6 +19,12 @@
   top: 17px;
   right: 17px;
   cursor: pointer;
+  fill: var(--secondary-text-color);
+
+  @media screen and (max-width: 676px) {
+    width: 20px;
+  height: 20px;
+  }
 }
 .modal {
   /* Скрываем окна  */
@@ -264,6 +270,7 @@
 
 /*  MODAL PRODUCTS*/
 .modal-prod {
+  
   position: absolute;
   top: 50%;
   left: 50%;
@@ -271,14 +278,18 @@
   /*  Побочные стили   */
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
   text-align: center;
-  padding: 28px 20px;
+  padding: 32px 40px;
   border-radius: 10px;
   background-color: var(--main-text-color);
   border: 2px solid var(--accent-color);
   transition: 0.3s all;
-  @media screen and(min-width: 768px) {
-    max-width: 568px;
-    min-height: 996px;
+  width: 568px;
+    height: 996px;
+    
+  @media screen and(max-width: 767px) {
+    width: 280px;
+    height: 991px;
+    padding: 28px 20px;
   }
 }
 /* Стили для кнопки закрытия */
@@ -331,13 +342,13 @@
   border: 2px solid var(--pseudo-elements-green);
   border-radius: 40px;
   font-size: 10px;
-  line-height: 12px;
+  line-height: calc(12/10);
   color: var(--secondary-text-color);
   @media screen and (min-width: 768px) {
     width: 65px;
     height: 90px;
     font-size: 12px;
-    line-height: 15px;
+    line-height: calc(15/12);
   }
 }
 .ingridients-contain__value {
@@ -479,7 +490,7 @@
 
   @media screen and (max-width: 480px) {
     position: absolute;
-    top: 500%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -502,15 +513,7 @@
     padding: 28px;
   }
 }
-.modal-loc__cross {
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  fill: #444;
-  cursor: pointer;
-}
+
 .modal__title {
   font-family: 'Seymour One';
   font-style: normal;
@@ -593,13 +596,16 @@
   border-radius: 10px;
   border: 2px solid var(--accent-color);
 }
-.franchise {
+.modal-franchise {
   width: 568px;
   height: 668px;
+  padding: 32px 60px;
 
   @media screen and (max-width: 767px) {
     width: 280px;
-    height: 100%;
+    height: 674px;
+    padding: 28px 30px;
+
   }
 }
 
@@ -624,15 +630,18 @@
 }
 
 .franchise__text {
+  width: 448px;
   font-size: 16px;
   line-height: calc(22 / 16);
   margin-top: 24px;
   text-align: justify;
+  color: var(--secondary-text-color);
 
   @media screen and (max-width: 767px) {
     font-size: 14px;
     line-height: calc(20 / 14);
     margin-top: 20px;
+    width: 224px;
   }
 }
 
@@ -641,18 +650,17 @@
   flex-direction: column;
   gap: 16px;
   margin-top: 32px;
+  margin-bottom: 32px;
 
   @media screen and (max-width: 767px) {
     margin-top: 24px;
+    margin-bottom: 24px;
   }
 }
 
-.franchise__form-item {
-  position: relative;
-}
+
 
 .franchise__form-lable {
-  position: absolute;
   top: 11px;
   left: 66px;
   font-size: 14px;
@@ -672,13 +680,23 @@
   border: 1px solid #84a178;
   border-radius: 10px;
   padding: 11px 16px;
-  min-width: 368px;
+  width: 368px;
+  height: 42px;
   font-family: inherit;
+  @media screen and (max-width: 767px) {
+    width: 224px;
+    height: 32px;
+    padding: 8px 12px;
+  }
 }
 
 .franchise__form-texterea {
   min-width: 368px;
   height: 84px;
+  @media screen and (max-width: 767px) {
+    min-width: 224px;
+    height: 64px;
+  }
 }
 
 textarea {
@@ -694,4 +712,5 @@ textarea {
   padding: 12px 34px;
   border-color: transparent;
   transition: 250ms linear;
+
 }

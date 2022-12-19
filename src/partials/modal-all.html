@@ -1,25 +1,8 @@
 <div class="overlay js-overlay-modal">
   <div class="modal modal-buy" data-modal="buyNow">
     <!--   Svg иконка для закрытия окна  -->
-    <svg
-      class="modal__cross js-modal-close"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <g clip-path="url(#clip0_10674_17412)">
-        <path
-          d="M12.9398 12L18.4665 6.47329C18.5757 6.34576 18.6328 6.18171 18.6263 6.01393C18.6198 5.84614 18.5503 5.68698 18.4315 5.56825C18.3128 5.44952 18.1536 5.37997 17.9859 5.37349C17.8181 5.36701 17.654 5.42408 17.5265 5.53329L11.9998 11.06L6.47315 5.52663C6.34762 5.40109 6.17735 5.33057 5.99982 5.33057C5.82228 5.33057 5.65202 5.40109 5.52649 5.52663C5.40095 5.65216 5.33042 5.82243 5.33042 5.99996C5.33042 6.1775 5.40095 6.34776 5.52649 6.47329L11.0598 12L5.52649 17.5266C5.4567 17.5864 5.40002 17.6599 5.36 17.7426C5.31999 17.8254 5.2975 17.9154 5.29395 18.0073C5.29041 18.0991 5.30588 18.1906 5.33939 18.2762C5.37291 18.3617 5.42375 18.4394 5.48872 18.5044C5.55369 18.5694 5.63139 18.6202 5.71694 18.6537C5.80249 18.6872 5.89404 18.7027 5.98585 18.6992C6.07767 18.6956 6.16776 18.6731 6.25047 18.6331C6.33318 18.5931 6.40672 18.5364 6.46649 18.4666L11.9998 12.94L17.5265 18.4666C17.654 18.5758 17.8181 18.6329 17.9859 18.6264C18.1536 18.62 18.3128 18.5504 18.4315 18.4317C18.5503 18.3129 18.6198 18.1538 18.6263 17.986C18.6328 17.8182 18.5757 17.6542 18.4665 17.5266L12.9398 12Z"
-          fill="#131313"
-        />
-      </g>
-      <defs>
-        <clipPath id="clip0_10674_17412">
-          <rect width="24" height="24" fill="white" />
-        </clipPath>
-      </defs>
+    <svg class="modal__cross js-modal-close">
+      <use href="./images/icons/icons.svg#icon-modal-cross-black"></use>
     </svg>
     <p class="modal-buy__title">Buy now</p>
     <ul class="modal-buy__list">
@@ -66,14 +49,8 @@
   </div>
   <!--Modal products-->
   <div class="modal modal-prod" data-modal="products">
-    <svg
-      class="modal__cross js-modal-close"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
-      />
+    <svg class="modal__cross js-modal-close">
+      <use href="./images/icons/icons.svg#icon-modal-cross-black"></use>
     </svg>
     <p class="ingridients-modal__title">Chololate icecream</p>
     <div>
@@ -143,14 +120,8 @@
   <!--MODALS CONTACTS-->
   <!--location-->
   <div class="modal modal-location" data-modal="loc">
-    <svg
-      class="modal-loc__cross js-modal-close"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
-      />
+    <svg class="modal__cross js-modal-close">
+      <use href="./images/icons/icons.svg#icon-modal-cross-black"></use>
     </svg>
     <h2 class="modal__title">our locations</h2>
     <div class="map">
@@ -167,14 +138,8 @@
 
   <!--franchise-->
   <div class="modal modal-franchise" data-modal="franchise">
-    <svg
-      class="modal__cross js-modal-close"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
-      />
+    <svg class="modal__cross js-modal-close">
+      <use href="./images/icons/icons.svg#icon-modal-cross-black"></use>
     </svg>
     <h2 class="franchise__title">
       Thank you for your interest in owning an Ice Cream shop
@@ -189,38 +154,27 @@
     <ul class="franchise__form">
       <li class="franchise__form-item">
         <label class="franchise__form-lable" for="name">
-          <input
-            class="franchise__form-input"
-            type="text"
-            name="name"
-            id="name"
-          />
+          <input class="franchise__form-input" type="text" name="name" id="name" placeholder="Darth Vader"></input>
+
         </label>
       </li>
       <li class="franchise__form-item">
         <label class="franchise__form-lable" for="tel">
-          <input class="franchise__form-input" type="tel" name="tel" id="tel" />
+          <input class="franchise__form-input" type="tel" name="tel" id="tel" placeholder="+34123456789"></input>
+
         </label>
       </li>
       <li class="franchise__form-item">
         <label class="franchise__form-lable" for="mail">
-          <input
-            class="franchise__form-input"
-            type="email"
-            name="mail"
-            id="mail"
-          />
+          <input class="franchise__form-input" type="email" name="mail" id="mail" placeholder="vader@death.star"></input>
+
         </label>
       </li>
       <li class="franchise__form-item">
-        <label class="franchise__form-lable" for="comment">comment</label>
-        <textarea
-          class="franchise__form-texterea"
-          name="comment"
-          id="comment"
-          cols="3"
-          rows="4"
-        ></textarea>
+        <label class="franchise__form-lable" for="comment">
+          <textarea class="franchise__form-texterea" name="comment" id="comment" cols="3" rows="4" placeholder="comment"></textarea>
+
+        </label>
       </li>
     </ul>
     <button class="franchise__button" type="submit">submit</button>
