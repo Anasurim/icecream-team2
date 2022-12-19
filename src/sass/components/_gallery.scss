@@ -38,5 +38,13 @@
 }
 
 .gallery__pic {
-  border-radius: 24px;
+  border-radius: 8px;
+
+  @media screen and (min-width: 768px) {
+    border-radius: 18px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    border-radius: 24px;
+  }
 }
