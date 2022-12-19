@@ -27,8 +27,9 @@
 
   &:focus {
     background: var(--btn-hover-color);
-    color: var(--main-text-colors);
+    color: var(--main-text-color);
     outline: 0 transparent;
+    fill: var(--main-text-color);
   }
 }
 
@@ -43,7 +44,7 @@
   &:focus {
     border: 2px solid var(--btn-hover-color);
     background-color: transparent;
-    color: var(--main-text-colors);
+    color: var(--main-text-color);
   }
 }
 
@@ -78,4 +79,8 @@
 
 .icon-arrow {
   fill: var(--secondary-text-color);
+}
+
+.hidden {
+  display: none;
 }
