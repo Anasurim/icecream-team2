@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper-cust', {
+const swiperCust = new Swiper('.swiper-cust', {
   // Optional parameters
   slidesToShow: 1,
   autoplay: false,
@@ -11,7 +11,7 @@ const swiper = new Swiper('.swiper-cust', {
     el: '.swiper-pagination',
     clickable: true,
   },
-  // Navigation arrows
+  // // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
