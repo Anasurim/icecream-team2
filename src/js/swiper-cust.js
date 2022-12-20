@@ -1,7 +1,7 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper-cust', {
   // Optional parameters
   slidesToShow: 1,
-  autoplay: true,
+  autoplay: false,
   autoplaySpeed: 3000,
   direction: 'horizontal',
   loop: true,
@@ -9,7 +9,7 @@ const swiper = new Swiper('.swiper', {
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
-    // clickable: true,
+    clickable: true,
   },
   // Navigation arrows
   navigation: {
