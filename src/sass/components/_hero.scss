@@ -287,8 +287,7 @@
   animation-duration: 1500ms;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-timing-function: slide-in-left 0.5s
-    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   animation-delay: 0;
 
   @media screen and (min-width: 768px) {
@@ -358,8 +357,7 @@
   animation-duration: 1600ms;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-timing-function: slide-in-left 0.5s
-    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   animation-delay: 0;
 
   @media screen and (min-width: 767px) {
@@ -425,7 +423,7 @@
   animation-duration: 4900ms;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-timing-function: text-flicker-in-glow 4s linear both;
+  animation-timing-function: linear;
   animation-delay: 0;
 
   @media screen and (min-width: 767px) {
@@ -638,8 +636,7 @@
   animation-duration: 1500ms;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-timing-function: slide-in-left 0.5s
-    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   animation-delay: 0;
 
   @media screen and (max-width: 767px) {
@@ -717,7 +714,7 @@
   animation-duration: 2000ms;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-timing-function: slide-in-left 0.5s linear;
+  animation-timing-function: linear;
   animation-delay: 4000ms;
 
   @keyframes dots_half {
@@ -741,8 +738,7 @@
   animation-duration: 2000ms;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-timing-function: slide-in-bottom 0.5s
-    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   animation-delay: 1600ms;
 
   @keyframes ice {
@@ -803,7 +799,7 @@
   animation-duration: 2000ms;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-timing-function: slide-in-left 0.5s linear;
+  animation-timing-function: linear;
   animation-delay: 1600ms;
 
   @media screen and (max-width: 767px) {
@@ -829,7 +825,7 @@
   animation-duration: 2000ms;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-timing-function: slide-in-left 0.5s linear;
+  animation-timing-function: linear;
   animation-delay: 2000ms;
 
   @keyframes dots_half {
